@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div Class="Lampada">
+        <div class="img"> </div>
+        <button class="ButtonOn">Ligar</button>
+        <button class="ButtonOff">Desligar</button>
+    </div>
+    <script>
+        var imgElement = document.createElement('img');
+        imgElement.setAttribute('src', 'https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif');
+        imgElement.setAttribute('style', 'width:100px');
+        var containerElement = document.querySelector('.Lampada div');
+        containerElement.appendChild(imgElement);
+        var buttonOn = document.querySelector('.ButtonOn');
+        buttonOn.onclick = function() {
+            imgElement = document.querySelector('img').src = 'https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif';
+        }
+        var buttonOff = document.querySelector('.ButtonOff');
+        buttonOff.onclick = function() {
+            imgElement = document.querySelector('img').src = 'https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/412/original/pic_bulboff.gif';
+        }
+    </script>
+</body>
+
+</html>
